@@ -2,8 +2,6 @@
 
 This repository contains an MT adaptation of a dual-branch AIA Transformer denoising network. It provides code for preparing MT time series, adding synthetic noise during training, learning in the time-frequency domain, denoising full records, and estimating impedance tensors from the resulting complex spectra.
 
-For the existing Chinese project notes, see [README_MT.md](README_MT.md).
-
 ## Overview
 
 The workflow treats denoising as a supervised time-frequency learning problem:
@@ -38,7 +36,6 @@ Training uses online augmentation: samples are randomly cropped and re-noised du
 | config_mt.py | Data, STFT, noise, loss, and training configuration. |
 | MT_dataset/ | Prepared data pools, split manifests, and JSON sample lists. |
 | MT_enhanced/evaluation_ex.csv | Evaluation metrics for the ex channel. |
-| README_MT.md | Existing Chinese workflow notes. |
 
 ## Quick start
 
